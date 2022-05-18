@@ -45,9 +45,9 @@ class OnboardingContainerViewController: UIViewController {
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         self.pageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
         
-        let page1 = OnboardingViewController(heroImageName: "11", titleText: "Hey, this is a new app that helps you count push-ups 👋")
-        let page2 = OnboardingViewController(heroImageName: "22", titleText: "You can simply create your own exercise sets or use our 30 days training plan 🏆")
-        let page3 = OnboardingViewController(heroImageName: "33", titleText: "It's easy: place a phone on the floor right opposite your chest and press start. When your body will in 5 centimeters above the phone, push up will be counted. Also, we will mark days with your training in the calendar 🚀")
+        let page1 = OnboardingViewController(heroImageName: "Stopwatch", titleText: "Hey, this is a new app that helps you count push-ups 👋")
+        let page2 = OnboardingViewController(heroImageName: "Cup", titleText: "You can simply create your own exercise sets or use our 30 days training plan 🏆")
+        let page3 = OnboardingViewController(heroImageName: "Medal", titleText: "It's easy: place a phone on the floor right opposite your chest and press start. When your body will in 5 centimeters above the phone, push up will be counted. Also, we will mark days with your training in the calendar 🚀")
         
         pages.append(page1)
         pages.append(page2)
