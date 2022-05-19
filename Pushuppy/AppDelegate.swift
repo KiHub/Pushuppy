@@ -19,10 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        window?.backgroundColor = .systemBackground
+        window?.backgroundColor = appMainColor
         onboardingContainerViewController.delegate = self
         
-        let vc1 = SearchViewController()
+        let vc1 = SetCounterViewController()
         let vc2 = ContactsViewController()
         let vc3 = FavoritesViewController()
         
@@ -50,20 +50,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     
-    class SearchViewController: UIViewController {
-        override func viewDidLoad() {
-            title = "Counter"
-           
-            let gradient: CAGradientLayer = CAGradientLayer()
-            gradient.colors = [appBackGroundColor.cgColor, appMainColor.cgColor]
-                    gradient.locations = [0.0 , 1.0]
-                    gradient.startPoint = CGPoint(x : 0.0, y : 0)
-                    gradient.endPoint = CGPoint(x :0.0, y: 0.5)
-                    gradient.frame = view.bounds
-                    view.layer.addSublayer(gradient)
-            
-        }
-    }
+//    class CounterViewController: UIViewController {
+//        override func viewDidLoad() {
+//            title = "Counter"
+//           
+//            let gradient: CAGradientLayer = CAGradientLayer()
+//            gradient.colors = [appBackGroundColor.cgColor, appMainColor.cgColor]
+//                    gradient.locations = [0.0 , 1.0]
+//                    gradient.startPoint = CGPoint(x : 0.0, y : 0)
+//                    gradient.endPoint = CGPoint(x :0.0, y: 0.5)
+//                    gradient.frame = view.bounds
+//                    view.layer.addSublayer(gradient)
+//            
+//        }
+//    }
     
     class ContactsViewController: UIViewController {
         override func viewDidLoad() {

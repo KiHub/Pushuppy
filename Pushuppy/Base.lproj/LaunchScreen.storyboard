@@ -14,8 +14,17 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stopwatch" translatesAutoresizingMaskIntoConstraints="NO" id="A96-BK-FyL">
+                                <rect key="frame" x="122" y="363" width="170.5" height="170.5"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.38039215686274508" green="0.25490196078431371" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="A96-BK-FyL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="CY0-7O-aJG"/>
+                            <constraint firstItem="A96-BK-FyL" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="nji-bq-n43"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -23,4 +32,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Stopwatch" width="170.5" height="170.5"/>
+    </resources>
 </document>
