@@ -19,7 +19,7 @@ class SetCounterViewController: UIViewController {
 //        
 //    }()
     
-  //  private let gradient = Gradient.shared.gradient
+    let gradient: CAGradientLayer = CAGradientLayer()
     
     private let stackView: UIStackView = {
         let stackView = UIStackView()
@@ -63,11 +63,16 @@ class SetCounterViewController: UIViewController {
     
     func style() {
      //   view.layer.addSublayer(gradient)
-    
+        gradient.colors = [appBackGroundColor.cgColor, appMainColor.cgColor]
+        gradient.locations = [0.0 , 1.0]
+        gradient.startPoint = CGPoint(x : 0.0, y : 0)
+        gradient.endPoint = CGPoint(x :0.0, y: 0.5)
+    //    gradient.frame = view.bounds
         
     }
     
     func layout() {
+        view.layer.addSublayer(gradient)
         stackView.addArrangedSubview(picker)
         stackView.addArrangedSubview(startButton)
         view.addSubview(stackView)
@@ -98,7 +103,7 @@ class SetCounterViewController: UIViewController {
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-    //    gradient.frame = view.bounds
+        gradient.frame = view.bounds
     }
     
 }
@@ -183,6 +188,8 @@ extension SetCounterViewController {
     @objc func startTapped(_ sender: UIButton) {
         let counterVC = CounterViewController()
         navigationController?.pushViewController(counterVC, animated: true)
+        counterVC.labelNumber = selected
+        counterVC.sets = selectedSet
       //  navigationController?.present(counterVC, animated: true, completion: nil)
         print("Start tapped")
        // counterVC.modalPresentationStyle = .fullScreen

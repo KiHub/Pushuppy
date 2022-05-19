@@ -16,3 +16,7 @@ let converter = ColorConverter()
 let appBackGroundColor = converter.hexStringToUIColor(hex: "#614124")
 let appMainColor = converter.hexStringToUIColor(hex: "#E8C07D")
 let appSecondColor = converter.hexStringToUIColor(hex: "#E4E9BE")
+
+let appThirdColor = converter.hexStringToUIColor(hex: "#FEC260")
+let appFifthColor = converter.hexStringToUIColor(hex: "#AC90E2")
+let appSixthColor = converter.hexStringToUIColor(hex: "#3F3B90")

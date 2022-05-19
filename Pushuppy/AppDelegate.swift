@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         onboardingContainerViewController.delegate = self
         
         let vc1 = SetCounterViewController()
-        let vc2 = ContactsViewController()
+        let vc2 = CounterViewController()
         let vc3 = FavoritesViewController()
         
       //  vc1.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
