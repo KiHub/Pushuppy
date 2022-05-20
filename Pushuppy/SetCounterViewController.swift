@@ -92,7 +92,7 @@ class SetCounterViewController: UIViewController {
     }
     
     func setup() {
-        title = "Counter"
+      //  title = "Counter"
         
      //   self.view.addSubview(startButton)
       //  self.view.addSubview(picker)

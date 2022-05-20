@@ -89,7 +89,7 @@ class CounterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setup()
         style()
         layout()
@@ -106,6 +106,7 @@ class CounterViewController: UIViewController {
     }
 
     func style() {
+        navigationController?.navigationBar.tintColor = appMainColor
      //   view.layer.addSublayer(gradient)
         gradient.colors = [appBackGroundColor.cgColor, appMainColor.cgColor]
         gradient.locations = [0.0 , 1.0]
